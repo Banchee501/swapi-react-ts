@@ -1,0 +1,42 @@
+@import '../../style/variables.scss';
+
+.films {
+    &__list {
+        margin-top: 45px;
+        strong {
+            color: $main-color;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 225px);
+        justify-content: space-between;
+        row-gap: 55px;
+    }
+    &__item {
+        width: 280px;
+        height: auto;
+        background-color: $dark;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+        padding: 15px;
+        cursor: pointer;
+        color: $grey;
+        border-radius: 5px;
+        transition: 0.3s transform;
+        &-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &-details {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}

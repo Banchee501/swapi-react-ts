@@ -1,0 +1,35 @@
+@import '../../style/variables.scss';
+@import '../../style/style.scss';
+
+.single-char {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 293px 550px;
+    column-gap: 50px;
+    align-items: start;
+    background-color: $dark;
+    color: $grey;
+    border-radius: 10px;
+    &__name {
+        color: $main-color;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 29px;
+        text-align: center;
+        line-height: 7em;
+    }
+    &__info {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 25px;
+    }
+    li {
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px;
+        white-space: pre-wrap;
+    }
+    span {
+        color: $main-color;
+    }
+}
